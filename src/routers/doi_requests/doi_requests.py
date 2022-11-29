@@ -6,13 +6,13 @@ from lib.authclient import KBaseAuthException, KBaseAuthInvalidToken, KBaseAuthM
 from lib.db import FileStorage, now
 from lib.responses import error_response, exception_response
 from pydantic import BaseModel, Field
-from routers.demos import OSTIRecord
 from routers.doi_forms.forms import OSTISubmission
+from routers.doi_forms.forms_types import OSTIRecord
 
 from lib import ostiapi
 
 router = APIRouter(
-    prefix="/doi_requests",
+    prefix="/osti_requests",
     responses={404: {"description": "Not found"}},
 )
 

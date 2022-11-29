@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from routers.doi_forms import admin, forms
 
 router = APIRouter(
-    prefix="/doi_forms",
+    prefix="/forms",
     # tags=["items"],
     # dependencies=[Depends(get_token_header)],
     responses={404: {"description": "Not found"}},

@@ -2,8 +2,7 @@ module-name:
   DOIRequest
 
 module-description:
-  A prototype service for creating linkage between a KBase account and an ORCID Sandbox account. This linkage allows
-  accessing an ORCID profile, and managing the work activity (publications) for an account.
+  A prototype service to provide for creating a request for a DOI via the OSTI api.
 
 service-language:
   python

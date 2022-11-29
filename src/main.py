@@ -11,17 +11,18 @@ from lib.config import get_service_path
 from lib.exceptions import KBaseAuthException
 from lib.utils import get_kbase_config
 from model_types import KBaseConfig
-from routers import doiorg, works
+from routers import doiorg
 from routers.doi_forms import root
+from routers.doi_requests import doi_requests
 
 app = FastAPI(
     docs_url=None,
     redoc_url=None,
 )
 
-app.include_router(works.router)
 app.include_router(doiorg.router)
 app.include_router(root.router)
+app.include_router(doi_requests.router)
 
 
 @app.exception_handler(RequestValidationError)

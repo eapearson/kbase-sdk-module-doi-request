@@ -1,0 +1,33 @@
+{
+  "functions": {
+    "run_DOIRequest": {
+      "name": "run_DOIRequest",
+      "comment": "This example function accepts any number of parameters and returns results in a KBaseReport",
+      "place": null,
+      "input": [
+        {
+          "type": "mapping<string,UnspecifiedObject>",
+          "comment": null
+        }
+      ],
+      "output": [
+        {
+          "type": "DOIRequest.ReportResults",
+          "comment": ""
+        }
+      ]
+    }
+  },
+  "module_name": "DOIRequest",
+  "sdk_version": "1.2.0",
+  "sdk_git_commit": "8def489f648a7ff5657d33ed05f41c60f4766e1b",
+  "impl_file_path": "lib/DOIRequest/DOIRequestImpl.py",
+  "spec_files": [
+    {
+      "content": "/*\nA KBase module: DOIRequest\n*/\n\nmodule DOIRequest {\n    typedef structure {\n        string report_name;\n        string report_ref;\n    } ReportResults;\n\n    /*\n        This example function accepts any number of parameters and returns results in a KBaseReport\n    */\n    funcdef run_ORCIDLink(mapping<string,UnspecifiedObject> params) returns (ReportResults output) authentication required;\n\n};\n",
+      "file_name": "DOIRequest.spec",
+      "is_main": 1
+    }
+  ],
+  "function_places": {}
+}

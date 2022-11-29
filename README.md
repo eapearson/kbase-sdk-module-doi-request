@@ -8,7 +8,7 @@ You can also learn more about the apps implemented in this module from its [cata
 
 ## Actually...
 
-This is a prototype service for linking a KBase account to an ORCID account. 
+This is a prototype service for creating requests for DOIs for static narratives. 
 
 Although it works with kb-sdk and is compatible with the KBase service wizard app runner, it does not use most of the machinery. Rather it is a simple fastapi-based service.
 

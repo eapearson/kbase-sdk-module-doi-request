@@ -1,4 +1,4 @@
 KBASE_ENDPOINT=${KBASE_ENDPOINT} \
 KBASE_SECURE_CONFIG_PARAM_IS_DYNAMIC_SERVICE=yes \
 DEV=yes \
-docker compose up
+docker compose run orcidlink bash
